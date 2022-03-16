@@ -17,7 +17,7 @@ typedef struct {
     u_char   *data;
 } ngx_str_t;
 
-
+/* Concise, useful macros */
 #define ngx_string(str)  { sizeof(str) - 1, (u_char *) str }
 #define ngx_null_string  { 0, NULL }
 

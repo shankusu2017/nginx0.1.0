@@ -7,6 +7,9 @@
 #include <ngx_config.h>
 #include <ngx_core.h>
 
+/*
+ * 原来刚开始的代码也是如此的精简
+ */
 
 ngx_int_t ngx_parse_size(ngx_str_t *line)
 {

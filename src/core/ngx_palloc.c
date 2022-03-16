@@ -125,6 +125,7 @@ void *ngx_palloc(ngx_pool_t *pool, size_t size)
         }
     }
 
+    /* 没有large control block，这里才构建 */
     if (large == NULL) {
         if (!(large = ngx_palloc(pool, sizeof(ngx_pool_large_t)))) {
             return NULL;

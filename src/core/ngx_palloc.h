@@ -31,7 +31,9 @@ struct ngx_pool_large_s {
     void              *alloc;
 };
 
-
+/*
+ * 结构体还可以优化，将buf和large区分开
+ */
 struct ngx_pool_s {
     char              *last;
     char              *end;
